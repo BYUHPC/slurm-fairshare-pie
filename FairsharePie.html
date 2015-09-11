@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Slurm Fairshare</title>
+    <link rel="stylesheet" type="text/css" href="FairsharePie.css">
+    <script type="text/javascript" src="FairsharePie.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+</head>
+<body>
+    <h2>Slurm Fairshare: My Account</h2>
+
+    <div id="instructions">
+        <p>Edit the table below to see how changing the Fairshares for a group member will impact the group. More information about Fairshare is available under <i>Adjust the priority of individual users</i> in <a href="https://marylou.byu.edu/documentation/slurm/account-coord">Extras for Faculty</a>. See also: <a href="https://github.com/BYUHPC/slurm-limits-web">Slurm Limits</a>.</p>
+        <p><b>To save these changes</b>, log into ssh.fsl.byu.edu and paste the commands generated below into the terminal.</p>
+        <pre id="commands"># command format below for reference
+        sacctmgr -i modify user $user set fairshare=$shares</pre>
+    </div>
+    <br>
+    <div id="datatable"></div>
+    <div id="piechart"><p id="tip">Hover over chart for details</p></div>
+
+</body>
+</html>

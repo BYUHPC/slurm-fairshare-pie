@@ -1,0 +1,41 @@
+th.shares, td.shares {
+    padding: 3px;
+    width: 100px;
+}
+
+td.right {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+#datatable {
+    float: left;
+}
+
+#piechart {
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#piechart_hover {
+    position: absolute;
+    visibility: hidden;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td.editable {
+    background: white;
+    border: 1px solid;
+    /*border-radius: 3px;*/
+    text-align: right;
+    padding-right: 3px;
+
+}
